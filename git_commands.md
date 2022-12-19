@@ -96,6 +96,8 @@ Commit:
 
     Reverter um commit(&git revert <commitID>).
 
+    Ecluir um commit(&git reset <commitID>).
+
 
 
 
