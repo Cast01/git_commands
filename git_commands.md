@@ -33,16 +33,16 @@ Commit:
     Básicamente o commit serve para fazermos as marcaçoes históricas no nosso projeto.
 
         MODIFIED:
-            git status: Ver todas as alterações no projeto.
+            &git status ///// Ver todas as alterações no projeto.
 
         STAGING:
-            git add: Prepara a(s) alteração(ões) para serem comitadas.
+            &git add ///// Prepara a(s) alteração(ões) para serem comitadas.
 
         COMMITED:
-            git commit: Cria o ponto histórico
+            &git commit ///// Cria o ponto histórico
 
         PUSH:
-            git push: Envia o ponto histórico para o projeto no GitHub.
+            &git push //// Envia o ponto histórico para o projeto no GitHub.
 
 Branch:
 
@@ -50,17 +50,17 @@ Branch:
 
 Configurando o Git:
 
-    git config --global --list: Lista de identificação de clientes para saber quem enviou o commit.
+    &git config --global --list ////// Lista de identificação de clientes para saber quem enviou o commit.
 
     Adicionar cientes:
 
-        git config --global user.name "Your userName": Seu nome
+        &git config --global user.name "Your userName" ///// Seu nome
 
-        git config --global user.email "Your email": Seu email
+        &git config --global user.email "Your email" ////// Seu email
 
 Criar um repositório:
 
-    --git init ////  Cria um repositório git no projeto.
+    &git init ////  Cria um repositório git no projeto.
 
     (.git) é uma pasta que vai ficar observando seu projeto e alertando alterações(add, delete, update e create)
 
@@ -72,18 +72,31 @@ Colocando arquivos no STAGE(git add):
 
     É um lugar onde enviamos as alterações que já podemos comitar e para vermos todas as alterações basta digitar git status.
 
-    --git add . //// add all changes to stage area.
+    &git add . //// add all changes to stage area.
 
-    --git add file.html file.css //// Add a especifiques files to stage area.
+    &git add file.html file.css //// Add a especifiques files to stage area.
 
 Commit:
 
     O commit é o ponto histórico que queremos salvar no nosso projeto. No commit se pega tudo que esta na stage area e envia para o projeto no GitHub. Isso só funciona se voce tiver permição ou for o dono desse repositório se não voçê terá de fazer uma (PULL REQUEST).
 
 
+    Envia o comit para o projeto no GitHub.
+        &git commit -m 'ADD(index.html,style.css) UPDATE(config.json) REMOVE(default.svg)'
 
-    --git commit -m 'ADD(index.html,style.css) UPDATE(config.json) REMOVE(default.svg)'
+
+
+    &git log //// Exibe todos os pontos salvos.
+
+    &git log --oneline ///// Exibe todos os pontos salvos apenas com o id do commit e a mensagem do commit.
 
 
 
-    --git log //// Exibe todos os pontos salvos.
+    Voltar a um commit(&git checkout <commitID>).
+
+    Reverter um commit(&git revert <commitID>).
+
+
+
+
+
