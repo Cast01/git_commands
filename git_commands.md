@@ -92,11 +92,20 @@ Commit:
 
 
 
-    Voltar a um commit(&git checkout <commitID>).
+    Voltar a um commit sem oque foi foito apos(&git checkout <commitID>).
 
-    Reverter um commit(&git revert <commitID>).
+    Reverte um commit(&git revert <commitID>).
 
-    Ecluir um commit(&git reset <commitID>).
+    Voltar a um commit, mas tudo que foi feito continua só que fora do stage(&git reset <commitID>).
+
+    Exclui o commit(&git reset <commitID> --hard)
+
+Ignorando arquivos:
+
+    Basta criar a arquivo .gitignore na raiz da aplicação e colocal o caminho para os arquivos ou pastas a serem ignoradas
+
+
+
 
 
 
