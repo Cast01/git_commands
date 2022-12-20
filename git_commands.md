@@ -128,7 +128,22 @@ MERGE:
 
     Quando resolvemos conflitos apenas comitamos as alterações sem uma mensagem pois a mensagem é a padrão do git apos uma resolução de um conflito.
 
+GitHub:
 
+    Outras opções para armazenar e compartilhar projetos:
+
+        BitBucket, GitLab
+
+
+    Pra que serve o GitHub?
+
+        "Hostear" o seu código em um lugar seguro.
+
+        Compartilhar seu projeto facilmente com outros devs.
+
+        Outros devs podem colaborar com seu projeto.
+
+        etc...
 
 
 
