@@ -122,10 +122,10 @@ MERGE:
 
     Entre na branch em questão e execute esse comando: &git merge <branchName>
 
-    Esse comando junta a branch em que voçẽ está com a branch informada no comando.
+    Esse comando junta a branch que voce informou com a branch em que voçê está.
 
     Quando ocorrer conflitos teremos que decidir que branch fica e que branch sai e podemos juntar umas partes de uma branch e umas partes da outra branch e fazer o merge.
-    
+
     Quando resolvemos conflitos apenas comitamos as alterações sem uma mensagem pois a mensagem é a padrão do git apos uma resolução de um conflito.
 
 
