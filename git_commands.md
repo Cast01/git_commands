@@ -1,6 +1,6 @@
 O que é GIT?
 
-    Git é um softwere para rastrear alterações em qualquer conjunto de arquivos, geralmente usado para coordenar o trabalho em programadores que desenvolvem codigo-fonte de forma colaborativa durante o desenvolvimento de doftwere. Seus objetivos incluem velocidade, integridade de dados e suporte para fluxos de trabalho não lineares distribuídos.
+    Git é um softwere para rastrear alterações em qualquer conjunto de arquivos, geralmente usado para coordenar o trabalho em programadores que desenvolvem codigo-fonte de forma colaborativa durante o desenvolvimento de softwere. Seus objetivos incluem velocidade, integridade de dados e suporte para fluxos de trabalho não lineares distribuídos.
 
 O que é GitHub?
 
@@ -20,13 +20,13 @@ Por que ultilizar o Git?
 
     Todas as pessoas que trabalham com desenvolvimento de softwere usam ele.
 
-    Para versionar o seu projeto, mantendo assim um histórico de tudo que foi feito e podendo voltar ou seguir para qualquer versão.
+    Para versionar o seu projeto, mantendo assim um histórico de tudo que foi feito e podendo voltar ou seguir para qualquer ponto.
 
 Repositório:
 
     Essencialmente git repositório é um diretório chamado .git dentro do seu projeto.
 
-    Este repositório rastreia todas as mudanças feitas nos arquivos do seu projeto, construindo um histórico ao longo do tempo.
+    Este repositório rastreia todas as mudanças feitas nos arquivos do seu projeto, construindo um histórico ao longo do tempo(commit).
 
 Commit:
 
@@ -36,7 +36,7 @@ Commit:
             &git status ///// Ver todas as alterações no projeto.
 
         STAGING:
-            &git add ///// Prepara a(s) alteração(ões) para serem comitadas.
+            &git add ///// Coloca a(s) alteração(ões) em uma área com tarefas já finalizadas para serem comitadas.
 
         COMMITED:
             &git commit ///// Cria o ponto histórico
@@ -50,7 +50,7 @@ Branch:
 
 Configurando o Git:
 
-    &git config --global --list ////// Lista de identificação de clientes para saber quem enviou o commit.
+    &git config --global --list ////// Lista das configurações globais.
 
     Adicionar cientes:
 
@@ -60,7 +60,7 @@ Configurando o Git:
 
 Criar um repositório:
 
-    &git init ////  Cria um repositório git no projeto.
+    &git init ////  Cria um repositório .git no projeto.
 
     (.git) é uma pasta que vai ficar observando seu projeto e alertando alterações(add, delete, update e create)
 
@@ -72,16 +72,16 @@ Colocando arquivos no STAGE(git add):
 
     É um lugar onde enviamos as alterações que já podemos comitar e para vermos todas as alterações basta digitar git status.
 
-    &git add . //// add all changes to stage area.
+    &git add . //// Adiciona todas as alterações para a área de STAGING.
 
-    &git add file.html file.css //// Add a especifiques files to stage area.
+    &git add file.html file.css //// Adiciona arquivos/pastas para a área de STAGING.
 
 Commit:
 
-    O commit é o ponto histórico que queremos salvar no nosso projeto. No commit se pega tudo que esta na stage area e envia para o projeto no GitHub. Isso só funciona se voce tiver permição ou for o dono desse repositório se não voçê terá de fazer uma (PULL REQUEST).
+    O commit é o ponto histórico que queremos salvar no nosso projeto. No commit se pega tudo que esta na stage area e salva em um ponto.
 
 
-    Envia o comit para o projeto no GitHub.
+    Pega as alterações na área de STAGING e salva na história do projeto.
         &git commit -m 'ADD(index.html,style.css) UPDATE(config.json) REMOVE(default.svg)'
 
 
@@ -96,7 +96,7 @@ Commit:
 
     Reverte um commit(&git revert <commitID>).
 
-    Voltar a um commit, mas tudo que foi feito continua só que fora do stage(&git reset <commitID>).
+    Voltar a um commit, mas tudo que foi feito apartir desse commit continua só que fora do stage(&git reset <commitID>).
 
     Exclui o commit(&git reset <commitID> --hard)
 
@@ -108,7 +108,7 @@ Branch(Feature):
 
     Branch seria as ramificações temporais, ou seja, quando vamos implementar uma nova feature(uma nova funcionalidade que será implementada) criamos uma branch para trabalharmos sem o risco de errar na branch principal e quando terminarmos de fazer a nossa feature podemos enviar para a branch principal.
 
-    Básicamente uma branch cria uma cópia da branch em questão para podemos implementar novas funcionalidades apartir de um commit sem cometer erros na branch principal.
+    Básicamente uma branch é uma cópia da branch main em que podemos implementar novas funcionalidades apartir sem cometer erros na branch principal.
 
     &git branch ///// Lista de todas as branchs dentro da branch main.
 
@@ -126,7 +126,7 @@ MERGE:
 
     Quando ocorrer conflitos teremos que decidir que branch fica e que branch sai e podemos juntar umas partes de uma branch e umas partes da outra branch e fazer o merge.
 
-    Quando resolvemos conflitos apenas comitamos as alterações sem uma mensagem pois a mensagem é a padrão do git apos uma resolução de um conflito.
+    Quando resolvemos conflitos apenas comitamos as alterações sem uma mensagem, pois a mensagem é a padrão do git apos uma resolução de um conflito.
 
 GitHub:
 
@@ -156,3 +156,7 @@ Pull:
 Pull Request:
 
     Para fazer um Pull Request devemos adicionar nossa chave SSH ao projeto ou criar um FORK do projeto original, criar uma branch para aquela feature e dar um push na branch em questão.
+
+Fork:
+
+    O FORK pega o repositório alvo e cria uma cópia do mesmo em meio aos seus repositórios e após clona-lo em nossa maquina qualquer alteração que for puxada poderá ser enviada para aprovação no repositório alvo e se o dono do projeto aceitar, suas alterações vão ser mergeadas com a branch main do projeto dele.
