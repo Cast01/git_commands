@@ -64,7 +64,7 @@ Criar um repositório:
 
     (.git) é uma pasta que vai ficar observando seu projeto e alertando alterações(add, delete, update e create)
 
-    Criar um repositório no GitHub:
+    Criar um repositório no GitHub e linkar meu projeto a ele:
         GitHub.com -> (Create new Repository -> Preencher -> Criar)
         Project file -> (git init -> git remote add origin -> git branch -M main -> git add -> git commit -> git push)
 
@@ -145,9 +145,14 @@ GitHub:
 
         etc...
 
+    Criar um repositório no GitHub e linkar meu projeto a ele:
+            GitHub.com -> (Create new Repository -> Preencher -> Criar)
+            Project file -> (git init -> git remote add origin -> git branch -M main -> git add . -> git commit -> git push)
 
+Pull:
 
+    O &git pull origin <branchName> é ultilizado para pegar tudo que foi feito na branch principal por outras pessoas e atualizar a branch no seu computador.
 
+Pull Request:
 
-
-
+    Para fazer um Pull Request devemos adicionar nossa chave SSH ao projeto ou criar um FORK do projeto original, criar uma branch para aquela feature e dar um push na branch em questão.
