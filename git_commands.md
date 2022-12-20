@@ -104,6 +104,31 @@ Ignorando arquivos:
 
     Basta criar a arquivo .gitignore na raiz da aplicação e colocal o caminho para os arquivos ou pastas a serem ignoradas
 
+Branch(Feature):
+
+    Branch seria as ramificações temporais, ou seja, quando vamos implementar uma nova feature(uma nova funcionalidade que será implementada) criamos uma branch para trabalharmos sem o risco de errar na branch principal e quando terminarmos de fazer a nossa feature podemos enviar para a branch principal.
+
+    Básicamente uma branch cria uma cópia da branch em questão para podemos implementar novas funcionalidades apartir de um commit sem cometer erros na branch principal.
+
+    &git branch ///// Lista de todas as branchs dentro da branch main.
+
+    &git branch <branchName> ///// Criar uma branch.
+
+    &git branch -d/-D <branchName> ///// Excluir uma branch.
+
+    &git checkout <branchName> ///// Entrar na branch desejada.
+
+MERGE:
+
+    Entre na branch em questão e execute esse comando: &git merge <branchName>
+
+    Esse comando junta a branch em que voçẽ está com a branch informada no comando.
+
+    Quando ocorrer conflitos teremos que decidir que branch fica e que branch sai e podemos juntar umas partes de uma branch e umas partes da outra branch e fazer o merge.
+    
+    Quando resolvemos conflitos apenas comitamos as alterações sem uma mensagem pois a mensagem é a padrão do git apos uma resolução de um conflito.
+
+
 
 
 
